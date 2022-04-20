@@ -1,2 +1,2 @@
 # News_Express
-## News web app repo
+## News web app
