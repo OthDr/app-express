@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doth News</title>
+    <link rel="stylesheet" type="text/css" href="/styles1.css">
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+
+    <div id="cover">
+        <form method="get" action="">
+          <div class="tb">
+            <div class="td"><input type="text" placeholder="Search about ..." required id="input1"></div>
+            <div class="td" id="s-cover">
+              <button type="submit" id="button" onclick="">
+                <div id="s-circle"></div>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>    
+    
+    <div class="container">
+      <h2 id="h2"></h2>
+      <br>
+      <div class="main-news" id="news" style="color: darkblue;">
+      
+          
+      </div>
+
+    </div>
+    <% result.forEach((element)=>{%>
+      
+
+      <div class="post">
+        <h3>Title: <a href= <%= '/web/news/'+element._id %>  > <%= element.title %> </a></h2>
+        <img src=<%= element.urlToImage %>></img>
+        <p> <%= element.description %> </p>
+        <h5>Author: <%= element.author %></h5>
+        <span><%= element.publishedAt %></span>
+        </div>
+
+    <% }); %>
+    
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
+
+//*** JS ORM 
+//*** auth authorization
+//*** versioning v1/v2 ...
+//*** shell & scripts
