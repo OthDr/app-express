@@ -43,4 +43,8 @@ using Joi object schema **`const Joi = require('joi')`**
 }`
 <br/>
 **chai-http (request testing), should & expect (Assertions)**
+## About news:
+- [x] **News countries:** `countries = ['dz','us','fr','ru','in','de','tr','eg','br','ca','cz','it','ua']`
+- [x] **News categories:** `categories =['business','entertaiment','general','health','science','sports','technologie']`
+
 
