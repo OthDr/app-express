@@ -47,4 +47,7 @@ using Joi object schema **`const Joi = require('joi')`**
 - [x] **News countries:** `countries = ['dz','us','fr','ru','in','de','tr','eg','br','ca','cz','it','ua']`
 - [x] **News categories:** `categories =['business','entertaiment','general','health','science','sports','technologie']`
 
-
+### example URL : 
+**"http://localhost:3000/api/news/category=sports"**
+<br/>
+**"http://localhost:3000/api/news/country=dz"**
