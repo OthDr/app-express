@@ -16,23 +16,13 @@ app.set('view engine' , 'ejs'); // set ejs as a view engine
 
 // database connection 
 mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{
-
-    
-}).catch((err)=>{
-    console.log('failed to connect to db',err);
-});
-
-
-
-
-    
-
     app.listen(port, ()=>{
         console.log(`Server is listening on port: ${port}`);
     });
     console.log('db connection successeded');
-    
-
+}).catch((err)=>{
+    console.log('failed to connect to db',err);
+});
     
 
  // ----------- HOME endpoint -------
