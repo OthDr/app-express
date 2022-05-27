@@ -22,7 +22,7 @@ using Joi object schema **`const Joi = require('joi')`**
 ### **Middleware**
 #### **body-parser `const bParser = require('body-parser')`:** To parse request body  *JSON or urlencoded* .
 
-## **routes**
+## **routes**: response can be redered on HTML page
 ### GET : 
 - #### GET('/news') *recent news* <br/>
 - #### GET('/news/country=:c_code') *news based on country code* <br/>
